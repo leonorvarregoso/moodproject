@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #F4EFEA;
+    font-family: "Patrick Hand", cursive;
+}
+
+/* ── ecrã inicial ── */
+#screen-start {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#screen-start h1 {
+    color: #2b1a0c;
+    font-size: 50px;
+}
+
+#play-btn {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#play-btn:hover {
+    transform: scale(1.02);
+}
+
+#play-btn img {
+    width: 200px;
+}
+
+/* ── ecrã de respiração ── */
+#screen-breathe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#circle-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#breathe-circle {
+    width: 220px;
+    height: 220px;
+    transition: none; /* controlado por JS */
+}
+
+#breathe-label {
+    position: absolute;
+    color: #2b1a0c;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    pointer-events: none;
+    user-select: none;
+}
+
+#stop-btn {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+#stop-btn{
+    scale: 1.02;
+}
+
+#stop-btn img {
+    width: 36px;
+    height: 36px;
+}
+
+/* ── util ── */
+.hidden {
+    display: none !important;
+}

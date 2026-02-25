@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4EFEA;
+}
+
+/* container principal */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra verticalmente */
+    align-items: center;     /* centra horizontalmente */
+}
+
+/* título */
+h1 {
+    color: #2b1a0c;
+    font-family: "Patrick Hand", cursive;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 120px; /* tira o margin-top gigante */
+}
+
+/* emoções */
+.emoções {
+    display: flex;
+    gap: 20px;
+}
+
+/* botões */
+a {
+    text-decoration: none;
+    color: #F4EFEA;
+    font-family: "Patrick Hand", cursive;
+    background-color: #2b1a0c;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 24px;
+    transition: transform 10s ease-in-out;
+    border: solid #2b1a0c 3px;
+}
+
+a:hover {
+    border: solid #2b1a0c 3px;
+    background-color: #F4EFEA;
+    color: #2b1a0c;
+}
